@@ -31,11 +31,11 @@ conn_params = {
 }
 
 #  Lista das tabelas que serão processadas
-tabelas = ['inspection_data_eagle_sl2', 'inspection_data_eagle_lra1', 'inspection_data_fsp']
+tabelas = ['inspection_data_mq1', 'inspection_data_mq2', 'inspection_data_mq3']
 
 #  Configurações DAG
 default_args = {
-    'owner': 'cebrace',
+    'owner': 'Victor_jenckel',
     'start_date': days_ago(1),
     'retries': 1,
 }
