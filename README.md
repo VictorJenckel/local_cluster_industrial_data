@@ -39,9 +39,10 @@ datalake_local/
 
 ### 2. ETL das Máquinas
 
-- A **Máquina 1** gera arquivos logs `.txt` . (rodando windows xp) - 
-- arquivos sao copiados para pasta local (temp) usando smbclient - DAG airflow
-- uma outra dag usando rsync monitora a pasta temp como sensor de alteração de dados
+- A **Máquina 1/2** gera arquivos logs `.txt` . (rodando windows xp) - 
+- arquivos sao copiados para pasta local e sobreescritos a cada 5 min (temp) usando smbclient - DAG airflow
+- A **Máquina 3** gera arquivos `.csv` .(rodando linux ubunto)
+- da mesma forma são copiados para a pasta temp usando rsync para monitoramento de alterações
 - Scripts em Python leem os arquivos, tratam os dados e inserem no PostgreSQL
 
 ### 3. Particionamento
