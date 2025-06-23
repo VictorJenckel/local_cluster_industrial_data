@@ -1,11 +1,11 @@
-# 📄 Documento de Requisitos de Hardware e Software
+# 📄 Documento de informação de Hardware e Software
 
 ## 1. Objetivo
-Descrever os requisitos necessários de hardware e software para a instalação, funcionamento e manutenção da solução de engenharia de dados industrial.
+Descrever as cofigurações atuais do cluster que está rodando a solução de engenharia de dados.
 
 ---
 
-## 2. Requisitos de Hardware
+## 2. Hardware
 
 ### 2.1. Servidor Principal
 - **Processador:** 12 nucleos i7 3300hz clock
@@ -26,7 +26,7 @@ Descrever os requisitos necessários de hardware e software para a instalação,
 
 ---
 
-## 3. Requisitos de Software
+## 3. Software
 
 ### 3.1. Sistema Operacional
 - **Ubuntu Server 22.04 LTS** ou versão equivalente estável.
