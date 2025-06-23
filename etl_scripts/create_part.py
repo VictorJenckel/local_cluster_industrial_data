@@ -17,10 +17,10 @@ def create_partition():
         yesterday = (datetime.today()-timedelta(days=1)).strftime('%Y-%m-%d')
         tomorrow = (datetime.today()+timedelta(days=1)).strftime('%Y-%m-%d')
 
-        partition_name = f"inspection_data_fsp_{today.replace('-', '_')}"
+        partition_name = f"inspection_data_mq3_{today.replace('-', '_')}"
 
         create_partition_sql = f"""
-        CREATE TABLE IF NOT EXISTS {partition_name} PARTITION OF inspection_data_fsp
+        CREATE TABLE IF NOT EXISTS {partition_name} PARTITION OF inspection_data_mq3
         FOR VALUES FROM ('{today} 00:00:00') TO ('{today} 23:59:59');
         """
 

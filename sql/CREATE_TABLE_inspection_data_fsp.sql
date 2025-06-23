@@ -31,4 +31,5 @@ CREATE TABLE inspection_data_fsp (
     lft_curv double precision,
     lft_dev double precision,
     CONSTRAINT inspection_data_fsp_unique UNIQUE (time, lite_id)
+    PARTITION BY RANGE (time)
 );
