@@ -1,12 +1,12 @@
-# Ignorar logs e backups
+# ignorar logs e backups
 logs/
 backups/
 
-# Ignorar ambientes virtuais
+# ignorar ambientes virtuais
 venv/
 .env
 
-# Ignorar caches Python
+# ignorar caches Python
 __pycache__/
 *.pyc
 
