@@ -1,4 +1,4 @@
-#  Projeto Data Lake Local com PostgreSQL + Apache Airflow
+#  Projeto Data server Local ( on premisses)
 
 Este projeto implementa um **mini Data Lake local** rodando em um servidor Linux, com banco de dados **PostgreSQL** e orquestração de processos via **Apache Airflow**.  
 O objetivo é criar uma infraestrutura robusta e escalável para integrar e armazenar dados industriais, aplicando boas práticas de engenharia de dados
@@ -87,7 +87,7 @@ datalake_local/
 
 ### Requisitos
 
-- Ubuntu 20.04+
+- Ubuntu 22.04+
 - Python 3.10+
 - PostgreSQL 14+
 - Apache Airflow 2.9 
